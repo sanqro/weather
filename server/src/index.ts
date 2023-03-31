@@ -5,7 +5,7 @@ const app = express();
 // Get / endpoint
 app.get("/", (req, res) =>
   res.status(200).json({
-    msg: "Root endpoint of: ttps://github.com/sanqro/weather"
+    msg: "Root endpoint of: https://github.com/sanqro/weather"
   })
 );
 
