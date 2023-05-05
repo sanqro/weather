@@ -14,7 +14,7 @@ app.get("/", (req, res) =>
 const port = parseInt(process.env.PORT) || 8080;
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`listening on port test ${port}`);
+  console.log(`listening on port ${port}`);
 });
 
 module.exports = app;
