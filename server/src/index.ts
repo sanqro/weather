@@ -1,7 +1,9 @@
 import express from "express";
+import weather from "./routes/weather";
 
 const app = express();
 
+app.use("/weather", weather);
 // Get / endpoint
 app.get("/", (req, res) =>
   res.status(200).json({
