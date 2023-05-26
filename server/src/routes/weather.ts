@@ -1,19 +1,29 @@
 import express from "express";
 import * as dotenv from "dotenv";
 import path from "path";
+import fetch from "node-fetch";
+import { WeatherData } from "../interfaces/interfaces";
+
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const router = express.Router();
 
-router.get("/get/:location", async (req, res) => {
+router.get("/get/:longitude/:latitude", async (req, res) => {
   try {
-    const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${process.env.WEATHER_API_KEY}&q=${req.params.location}`
-    );
-    const data = await response.json();
+    const { longitude, latitude } = req.params;
 
-    res.status(201).json({
-      location: data.location,
+    const response = await fetch(
+      `http://api.weatherapi.com/v1/current.json?key=${process.env.WEATHER_API_KEY}&q=${longitude},${latitude}`
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch weather data.");
+    }
+
+    const data: WeatherData = await response.json();
+
+    res.status(200).json({
+      location: data.location.name,
       temperature: data.current.temp_c,
       feelsLike: data.current.feelslike_c,
       humidity: data.current.humidity,
