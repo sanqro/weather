@@ -32,10 +32,10 @@ const WeatherComponent: React.ComponentType<WeatherComponentProps> = ({ latitude
   return (
     <StyledView className="flex items-center justify-center h-full">
       <StyledText className="font-bold text-4xl">{weatherData.location}</StyledText>
-      <StyledText className="text-2xl">Temp {weatherData.temperature}</StyledText>
-      <StyledText className="text-2xl">Feels Like {weatherData.feelsLike}</StyledText>
+      <StyledText className="text-2xl">Temp: {weatherData.temperature}</StyledText>
+      <StyledText className="text-2xl">Feels Like: {weatherData.feelsLike}</StyledText>
       <StyledText className="text-2xl" style={{ opacity: 0.8 }}>
-        {weatherData.humidity}
+        Humidity: {weatherData.humidity}
       </StyledText>
     </StyledView>
   );

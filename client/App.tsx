@@ -15,6 +15,14 @@ const App: React.FC = () => {
   useEffect(() => {
     (async () => {
       try {
+        const { status } = await Location.requestForegroundPermissionsAsync();
+
+        if (status !== "granted") {
+          console.log("Permission to access location was denied");
+          setIsLoading(false);
+          return;
+        }
+
         const location = await Location.getCurrentPositionAsync({});
         setLatitude(location.coords.latitude);
         setLongitude(location.coords.longitude);
