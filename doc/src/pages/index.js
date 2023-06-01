@@ -16,7 +16,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/doc">
-            Weather App Tutorial
+            Weather App Dokumentation
           </Link>
         </div>
       </div>
