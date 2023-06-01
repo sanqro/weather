@@ -2,7 +2,7 @@
 
 ### Inhaltsverzeichnis
 
-- [Dokumentation - Vocabulary Webapplication](#dokumentation)
+- [Dokumentation - Weather App](#dokumentation)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [IPERKA](#iperka)
     - [Informieren](#informieren)
@@ -15,7 +15,10 @@
   - [Technologien](#technologien)
   - [Quellen](#quellen)
   - [Lokale Entwicklungsumgebung](#lokale-entwicklungsumgebung)
-    - [test](#)
+    - [Expo Go Download](#Expo-Go-Download)
+    - [Lokale Entwicklungsumgebung aufsetzen](Lokale-Entwicklungsumgebung-aufsetzen)
+    - [Vorbereitung](#Vorbereitung)
+    - [Dependencies mit NPM installieren](#Dependencies-mit-NPM-installieren)
   - [Anforderungen](#anforderungen)
   - [Arbeitspakete](#arbeitspakete)
   - [Ausführung](#ausführung)
@@ -105,7 +108,7 @@ Wenn das Repository erfolgreich geforkt wurde, muss man das Repository klonen un
 
 ```shell
 git clone https://github.com/[deinBenutzername]/weather.git
-cd vocabulary/
+cd weather/
 ```
 
 #### Dependencies mit NPM installieren
