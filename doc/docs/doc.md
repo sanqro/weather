@@ -16,7 +16,7 @@
   - [Quellen](#quellen)
   - [Lokale Entwicklungsumgebung](#lokale-entwicklungsumgebung)
     - [Expo Go Download](#Expo-Go-Download)
-    - [Lokale Entwicklungsumgebung aufsetzen](Lokale-Entwicklungsumgebung-aufsetzen)
+    - [Lokale Entwicklungsumgebung aufsetzen](#Lokale-Entwicklungsumgebung-aufsetzen)
     - [Vorbereitung](#Vorbereitung)
     - [Dependencies mit NPM installieren](#Dependencies-mit-NPM-installieren)
   - [Anforderungen](#anforderungen)
@@ -235,3 +235,4 @@ Die Anforderungen, die funktional sind, funkionieren, aber die qualitativen nich
 ## Projektauswertung
 
 Am Anfang hatten wir schnell eine gute Idee, aber wussten nicht mit welchen Technologien man es am besten umsetzen kann. Wir hatten während dem Programmieren grosse Probleme mit Expo, da es immer meherere Minuten brauchte, um die App zu starten und manchmal ging es auch nicht. Für die Person, die zuständig für die Dokumentation war, war Docusaurus zu Beginn komisch und unübersichtlich, aber mit der Zeit wurde es besser und sie konnte Docusaurus gut anwenden und konfigurieren. Wir wollten zu erst den Standort mit der IP abfragen, was aber bei der Implementierung nicht so gut ging und dann haben wir auf das Feature mit dem Standort gewechselt.
+
