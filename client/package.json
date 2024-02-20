@@ -11,17 +11,17 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^18.1.0",
-    "@types/react-dom": "~18.0.10",
+    "@types/react-dom": "~18.2.18",
     "axios": "^1.6.3",
-    "expo": "~49.0.0",
+    "expo": "~49.0.22",
     "expo-location": "~15.1.1",
-    "expo-status-bar": "~1.4.4",
+    "expo-status-bar": "~1.11.1",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.0",
     "react-native-geocoding": "^0.5.0",
-    "react-native-web": "~0.18.11"
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
